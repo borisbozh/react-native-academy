@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: rgb(12, 53, 95);
+  padding: 5px;
+  text-align: center;
+  font-size: 45px;
+  font-style: italic;
+  color: white;
+  
+}
+
+body {
+  margin: 0;
+}
+
+
+#main {
+  background: rgb(67, 173, 225);
+}
+
+#main>section {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+h1{
+  font-size: 25px;
+}
+
+h2{
+  font-size: 15px;
+}
+
+article {
+  border: 2px solid rgb(123, 231, 16);
+  border-radius: 10px;
+  margin: 6px;
+  float: left;
+  padding: 15px;
+  width: 95%;
+  background-color: #f1f1f1;
+}
+
+
+footer {
+  float: left;
+  width: 100%;
+  background-color: rgb(12, 53, 95);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+aside {
+  float: right;
+  width: 20%;
+}
+
+aside img {
+  width: 100%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article,
+  aside {
+    width: 100%;
+    height: auto;
+  }
+
+  #articles {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
