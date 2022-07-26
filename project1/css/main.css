@@ -16,18 +16,25 @@ header {
   
 }
 
-body {
-  margin: 0;
+nav{
+  display: flex;
+  background-color: #333;
 }
 
-
-#main {
-  background: rgb(67, 173, 225);
+nav a{
+  color: aliceblue;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 20px;
 }
 
-#main>section {
-  margin-left: 8%;
-  margin-right: 8%;
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#add{
+  background-color: green;
 }
 
 h1{
@@ -38,53 +45,41 @@ h2{
   font-size: 15px;
 }
 
-article {
-  border: 2px solid rgb(123, 231, 16);
-  border-radius: 10px;
-  margin: 6px;
-  float: left;
-  padding: 15px;
-  width: 95%;
-  background-color: #f1f1f1;
+main{
+  display: flex;
+}
+
+.blogs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
 }
 
 
+article {
+  display: flex;
+  width: 20%;
+  border: 2px solid rgb(123, 231, 16);
+  border-radius: 10px;
+  margin: 6px;
+  padding: 15px;
+  background-color: #f1f1f1;
+}
+
+.side{
+  display: flex;
+  flex: 25%;
+}
+
+.main{
+  display: flex;
+  flex: 65%;
+}
+
 footer {
-  float: left;
-  width: 100%;
   background-color: rgb(12, 53, 95);
   padding: 10px;
   text-align: center;
   color: white;
-}
-
-aside {
-  float: right;
-  width: 20%;
-}
-
-aside img {
-  width: 100%;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav,
-  article,
-  aside {
-    width: 100%;
-    height: auto;
-  }
-
-  #articles {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 960px) {
-  article {
-    width: 100%;
-    height: auto;
-  }
 }
