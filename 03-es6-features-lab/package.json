@@ -1,0 +1,9 @@
+{
+  "name": "03-es6-features-lab",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "repository": "https://github.com/iproduct/react-native-training",
+  "author": "Boris Bozhinov",
+  "license": "Apache-2.0"
+}
