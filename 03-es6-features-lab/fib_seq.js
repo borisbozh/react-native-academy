@@ -1,19 +1,20 @@
-const fib = {
-    [Symbol.iterator](start = 0, step = 1, to = 1000){
-        let cur = start, sum = step;
+const fib = (to=20) => ({
+    [Symbol.iterator](start = 0, step = 1){
+        let cur = start, sum = step, index=0;
         return{
             next(){
+                index ++
                 [cur, sum] = [cur + sum, cur];
                 return{
                     value: cur,
-                    done: cur > to
+                    done: index > to
                 }
             }
         }
     }
-}
+})
 
-for (const e of fib){
+for (const e of fib(15)){
     console.log(e);
 }
 
@@ -24,7 +25,7 @@ const fibgen = {
     [Symbol.iterator]:function*(start = 0, step = 1, to = 1000){
         let cur = start, sum = step;
         for (let i = 0; i < 20; i++) {
-            if (cur < 1000) yield cur;
+            if (cur < to) yield cur;
             [cur, sum] = [cur + sum, cur];
             }
         }
