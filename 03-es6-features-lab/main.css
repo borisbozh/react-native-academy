@@ -1,4 +1,13 @@
 image{
-    height: 600px;
+    height: 650px;
     width: auto;
+}
+
+#results{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div{
+    font-size: larger;
 }

@@ -17,18 +17,23 @@
     
     <!-- Navigation Bar -->
     <div class="navbar">
-      <input type="text" placeholder="Search..">
+      <div class="search-container">
+        <form onsubmit="myFunction(event)">
+          <input id="bar" type="text" placeholder="Search.." name="search">
+          <button>Search</button>
+        </form>
+      </div>
     </div>
     
     <!-- The flexible grid (content) -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="side">
         <h2>About Me</h2>
         <h5>Photo of me:</h5>
         <img class="profile" src="image1.jpeg" alt="cool photo">
         <p>My name is Boris Bozhinov. Some text about me in culpa qui officia deserunt mollit anim..</p>
 
-      </div>
+      </div> -->
       <div class="main">
         <div id="results"></div>
         <!--
@@ -59,10 +64,9 @@
     </div>
     </div>
     
-    <!-- Footer -->
-    <div class="footer">
-      <h2>Random text</h2>
-    </div>
+    <footer class="footer">
+      <h2>Find cool books!</h2>
+    </footer>
     
     </body>
     </html>

@@ -1,0 +1,80 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "content": "JSON Server is easy ...",
+      "tags": [
+        "json-server",
+        "rest",
+        "api"
+      ],
+      "imageUrl": "https://dzone.com/articles/zero-code-rest-with-json-server",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Classes in ES6+",
+      "content": "Class syntax in ES6+ is very neat ...",
+      "tags": [
+        "javascript",
+        "es6",
+        "class"
+      ],
+      "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fscholar.5lijobs.com%2Fwp-content%2Fuploads%2F2021%2F08%2Fjavascript-1567486564472.jpg&imgrefurl=https%3A%2F%2Fscholar.5lijobs.com%2Fprogramming-for-the-web-with-javascript-top-course%2F&tbnid=ZWcHRO6J1JVZPM&vet=12ahUKEwjZsM7N_Z35AhVhWOUKHfBzCu8QMygPegUIARD7AQ..i&docid=OwzaeyHLMEbx-M&w=1200&h=672&q=javascript&ved=2ahUKEwjZsM7N_Z35AhVhWOUKHfBzCu8QMygPegUIARD7AQ",
+      "authorId": 1
+    },
+    {
+      "title": "rest client",
+      "content": "it is easy",
+      "tags": [
+        "json-server",
+        "rest",
+        "client"
+      ],
+      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
+      "authorId": 1,
+      "id": 4
+    },
+    {
+      "title": "10000",
+      "content": "12",
+      "tags": [
+        "json-server88",
+        "res88t",
+        "clien88t"
+      ],
+      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
+      "authorId": 1,
+      "id": 6
+    },
+    {
+      "title": "fgghhj",
+      "content": "it is easy 888",
+      "tags": [
+        "json-server88",
+        "res88t",
+        "clien88t"
+      ],
+      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
+      "authorId": 1,
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "username": "john123",
+      "role": "ADMIN"
+    }
+  ]
+}
