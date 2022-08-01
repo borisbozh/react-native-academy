@@ -9,7 +9,7 @@
         "rest",
         "api"
       ],
-      "imageUrl": "https://dzone.com/articles/zero-code-rest-with-json-server",
+      "imageUrl": "https://dz2cdn1.dzone.com/storage/temp/8746383-json-server.png",
       "authorId": 1
     },
     {
@@ -21,44 +21,34 @@
         "es6",
         "class"
       ],
-      "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fscholar.5lijobs.com%2Fwp-content%2Fuploads%2F2021%2F08%2Fjavascript-1567486564472.jpg&imgrefurl=https%3A%2F%2Fscholar.5lijobs.com%2Fprogramming-for-the-web-with-javascript-top-course%2F&tbnid=ZWcHRO6J1JVZPM&vet=12ahUKEwjZsM7N_Z35AhVhWOUKHfBzCu8QMygPegUIARD7AQ..i&docid=OwzaeyHLMEbx-M&w=1200&h=672&q=javascript&ved=2ahUKEwjZsM7N_Z35AhVhWOUKHfBzCu8QMygPegUIARD7AQ",
+      "imageUrl": "https://res.cloudinary.com/practicaldev/image/fetch/s--Iz3e8EkG--/c_imagga_scale,f_auto,fl_progressive,h_1080,q_auto,w_1080/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/azhvn8vuqrofsidykaas.jpg",
       "authorId": 1
     },
     {
-      "title": "rest client",
-      "content": "it is easy",
+      "id": 3,
+      "title": "REST Client Super Advanced",
+      "content": "REST Client is relatively easy ...",
       "tags": [
-        "json-server",
         "rest",
-        "client"
+        "rest-client",
+        "http",
+        "easy"
       ],
-      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
+      "imageUrl": "https://humao.gallerycdn.vsassets.io/extensions/humao/rest-client/0.25.0/1655829100763/Microsoft.VisualStudio.Services.Icons.Default",
+      "authorId": 1
+    },
+    {
+      "title": "Promises vs. Async/Await",
+      "content": "Async and await syntax is easy to learn ...",
+      "tags": [
+        "async",
+        "await",
+        "promise",
+        "javascript"
+      ],
+      "imageUrl": "https://humao.gallerycdn.vsassets.io/extensions/humao/rest-client/0.25.0/1655829100763/Microsoft.VisualStudio.Services.Icons.Default",
       "authorId": 1,
       "id": 4
-    },
-    {
-      "title": "10000",
-      "content": "12",
-      "tags": [
-        "json-server88",
-        "res88t",
-        "clien88t"
-      ],
-      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
-      "authorId": 1,
-      "id": 6
-    },
-    {
-      "title": "fgghhj",
-      "content": "it is easy 888",
-      "tags": [
-        "json-server88",
-        "res88t",
-        "clien88t"
-      ],
-      "imageUrl": "https://thumbs.dreamstime.com/b/sunrise-over-modern-skyline-dubai-uae-urban-construction-109241413.jpg",
-      "authorId": 1,
-      "id": 7
     }
   ],
   "comments": [
@@ -73,7 +63,8 @@
       "id": 1,
       "firstName": "John",
       "lastName": "Smith",
-      "username": "john123",
+      "username": "john",
+      "password": "john123",
       "role": "ADMIN"
     }
   ]
