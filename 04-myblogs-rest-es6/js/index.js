@@ -56,7 +56,7 @@ export function addPost(post) {
     `;
   postsSection.insertAdjacentElement("beforeend", postElem);
   postElem.querySelector('#delete').addEventListener('click', event => deletePost(post.id))
-  postElem.querySelector('#edit').addEventListener('click', event => editPost1(post.id))
+  postElem.querySelector('#edit').addEventListener('click', event => editPost2(post.id))
 }
 
 async function handleSubmitPost(event) {
@@ -83,6 +83,10 @@ export function resetForm() {
   while(instance.chipsData.length > 0) {
     instance.deleteChip(0);
   }
+}
+
+function editPost2(id){
+  document.getElementById("content").innerHTML = document.getElementById(id).content
 }
 
 export function editPost1(id){

@@ -1,4 +1,3 @@
-
 const API_BASE_URL = "http://localhost:3000/api/posts";
 
 export async function getAllPosts() {
@@ -35,6 +34,7 @@ export async function deletePost(postId){
     await fetch('http://localhost:3000/api/posts/' + postId, {
     method: 'DELETE',
 })
+    document.getElementById(postId).remove();
 }
 
 export async function editPost(post, postId){

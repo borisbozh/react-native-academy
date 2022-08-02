@@ -4,9 +4,9 @@
   "description": "REST, HTTP, json-server with ES6+ web client demo",
   "main": "index.js",
   "repository": "https://github.com/iproduct/react-native-training",
-  "author": "Trayan Iliev",
+  "author": "Boris",
   "license": "Apache-2.0",
-  "scripts":{
+  "scripts": {
     "api": "json-server db.json --routes routes.json --port=3000",
     "start": "lite-server"
   },
