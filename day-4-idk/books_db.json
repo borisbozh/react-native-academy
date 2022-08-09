@@ -1,0 +1,79 @@
+{
+  "books": [
+    {
+      "kind": "books#volume",
+      "id": "nZd2-Y2muh8C",
+      "etag": "+9YwZ56x44k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/nZd2-Y2muh8C",
+      "volumeInfo": {
+        "title": "Kur of Gor",
+        "subtitle": "Gor Book 28",
+        "authors": [
+          "John Norman"
+        ],
+        "publisher": "Hachette UK",
+        "publishedDate": "2011-12-12",
+        "description": "Some might suppose that the Kurii are monsters, but that is distinctly unfair. They are merely another life form. The Kur is often eight to ten feet in height, if it should straighten its body, and several hundred pounds in weight, and is clawed, fanged, long armed, agile, and swift, often moving on all fours when it wishes to move most rapidly, and that is far faster than a man can run. It does not apologize for its strength, its speed, its formidableness. Nor does it attempt to conceal them. Once, it seems, the Kur race had a planet of their own, but somehow, apparently by their own hands, it was rendered unviable, either destroyed or desolate. So they searched for a new home, and in our solar system found not one but two suitable planets, planets they set their minds to conquering. But these planets, Earth and its sister planet Gor, the Counter-Earth, were not undefended. Four times have the Kur attempted their conquest, only to be beaten back by the mysterious Priest-Kings, rulers of Gor. As the Kurii lurk deep within an asteroid belt, awaiting the chance to seize their prize, their attention is drawn to a human, Tarl Cabot. Cabot was once an agent of Priest-Kings, but is now their prisoner, held captive in a secret prison facility. But what is their interest in Tarl Cabot? Whatever it may be, one thing soon becomes clear - that Tarl Cabot is a man to be taken seriously.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780575124325"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0575124326"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 320,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.1.1.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=nZd2-Y2muh8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=nZd2-Y2muh8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=nZd2-Y2muh8C&printsec=frontcover&dq=kur&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=nZd2-Y2muh8C&dq=kur&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Kur_of_Gor.html?hl=&id=nZd2-Y2muh8C"
+      },
+      "saleInfo": {
+        "country": "BG",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "BG",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Kur_of_Gor-sample-epub.acsm?id=nZd2-Y2muh8C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=nZd2-Y2muh8C&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "But these planets, Earth and its sister planet Gor, the Counter-Earth, were not undefended. Four times have the Kur attempted their conquest, only to be beaten back by the mysterious Priest-Kings, rulers of Gor."
+      }
+    }
+  ]
+}

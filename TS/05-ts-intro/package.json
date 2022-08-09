@@ -1,14 +1,14 @@
 {
   "name": "05-ts-intro",
   "version": "1.0.0",
-  "description": "Introduction to Typescript",
-  "main": "books_api.ts",
-  "repository": "https://github.com/iproduct/react-native-training",
-  "author": "Boris Bozhinov",
+  "description": "REST, HTTP, json-server with ES6+ web client demo",
+  "main": "index.js",
+  "repository": "https://github.com/borisbozh/react-native-training",
+  "author": "Boris",
   "license": "Apache-2.0",
   "scripts": {
-    "api": "json-server books_db.json --routes routes.json --port=4000",
-    "start": "lite-server"
+    "api": "json-server db.json --routes routes.json --port=4000",
+    "start": "concurrently --kill-others \"tsc -w\" \"lite-server\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.32.0",
