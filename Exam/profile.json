@@ -1,0 +1,46 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "firstName": "Boris",
+      "lastName": "Bozhinov",
+      "username": "w4t",
+      "password": "w4t",
+      "gender": "w4t",
+      "user_role": 0,
+      "pictureUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "description": "w4tw4t",
+      "status": 0,
+      "timestamp": "2022-08-10T08:15:42.363Z",
+      "modification": "2022-08-10T08:15:42.363Z"
+    },
+    {
+      "id": 2,
+      "firstName": "ivan",
+      "lastName": "murtov",
+      "username": "mlekarq1",
+      "password": "cskaumrq1312",
+      "gender": "mlekar",
+      "user_role": 0,
+      "pictureUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "description": "obicham mlekocentrali",
+      "status": 0,
+      "timestamp": "2022-08-10T08:18:13.912Z",
+      "modification": "2022-08-10T08:18:13.912Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "username": "executor",
+      "password": "123456",
+      "gender": "mlekar",
+      "user_role": 0,
+      "pictureUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "description": "gruh gruh",
+      "status": 0,
+      "timestamp": "2022-08-10T09:07:17.833Z",
+      "modification": "2022-08-10T09:07:17.833Z"
+    }
+  ]
+}
