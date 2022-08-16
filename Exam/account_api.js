@@ -193,7 +193,7 @@ var BlogsController = /** @class */ (function () {
     };
     BlogsController.prototype.editPost = function (post) {
         console.log("no time");
-        //   this.fillPostForm(post);
+        this.fillPostForm(post);
     };
     BlogsController.prototype.fillPostForm = function (post) {
         var field;

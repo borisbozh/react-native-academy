@@ -41,6 +41,34 @@
       "status": 0,
       "timestamp": "2022-08-10T09:07:17.833Z",
       "modification": "2022-08-10T09:07:17.833Z"
+    },
+    {
+      "id": 4,
+      "firstName": "Boris",
+      "lastName": "Bozhinov",
+      "username": "bobi",
+      "password": "123",
+      "gender": "male",
+      "user_role": 0,
+      "pictureUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "description": "e5he5h5",
+      "status": 0,
+      "timestamp": "2022-08-10T10:58:11.662Z",
+      "modification": "2022-08-10T10:58:11.662Z"
+    },
+    {
+      "id": 5,
+      "firstName": "aaaaa",
+      "lastName": "aaaaa",
+      "username": "qqq",
+      "password": "qqq",
+      "gender": "male",
+      "user_role": 0,
+      "pictureUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+      "description": "aaaaa",
+      "status": 0,
+      "timestamp": "2022-08-10T11:31:02.562Z",
+      "modification": "2022-08-10T11:31:02.562Z"
     }
   ]
 }

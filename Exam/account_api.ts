@@ -64,6 +64,7 @@ class BlogsController {
         let name = addPostForm.elements["username_login"].value
         let pass = (document.getElementById("password_login") as HTMLFormElement)!.value
         const users = this.getAllUsers()
+        
         let count = 0
         for (var x of await users){
             if (x.username === name && x.password === pass){
@@ -145,6 +146,7 @@ document
       }
     }
 
+
     getPostFormSnapshot(): User {
         const formData = new FormData(this.addPostForm);
         type PostDict = {
@@ -160,7 +162,6 @@ document
   
     handleSubmitPost = async (event: SubmitEvent) => {
       try {
-        console.log(2)
         event.preventDefault();
         const post = this.getPostFormSnapshot();
         // const post = newPost as unknown as Post;
