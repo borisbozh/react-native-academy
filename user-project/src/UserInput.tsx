@@ -1,19 +1,32 @@
 import React, { useState } from "react";
-import { User } from "./user_model";
+import { User, UserStatus } from "./user_model";
 
 interface Props {
   user: User;
   setuser: React.Dispatch<React.SetStateAction<User | undefined>>;
+  handleAdd:()=>void
 }
 
-const UserInput = ({ user, setuser }: Props) => {
+const UserInput = ({ user, setuser, handleAdd}: Props) => {
     const [firstName, setfirstName] = useState("")
     const [secondName, setsecondName] = useState("")
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
 
+function handleUserSubmit(event: React.FormEvent) {
+      event.preventDefault();
+      setuser (new User(
+         firstName, secondName, username, password, UserStatus.Completed))
+      console.log(1)
+      setfirstName("")
+      setsecondName("")
+      setusername("")
+      setpassword("")
+      handleAdd()
+      }
+
   return (
-    <form className="input">
+    <form className="input" onSubmit={(e) => handleUserSubmit(e)}>
       <label className="input_label" htmlFor="TodoInput-todo-text">
         Registartion Form
       </label>

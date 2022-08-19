@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 13,
+      "firstName": "SHRONK",
+      "lastName": "shrek",
+      "username": " ethetheth",
+      "password": "?24542525245twtr",
+      "gender": " hetheth",
+      "imageUrl": "https://www.shrekthemusical.co.uk/wp-content/uploads/2022/05/Shrek.jpg",
+      "description": " htehtehet",
+      "registrationTimestamp": "2022-08-19T12:10:39.729Z",
+      "lastModificationTimestamp": "2022-08-19T12:10:39.729Z",
+      "status": 0,
+      "userRole": 0
+    }
+  ]
+}
