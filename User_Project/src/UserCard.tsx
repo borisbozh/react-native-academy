@@ -4,6 +4,7 @@ import { Image, Pressable, Text, View, StyleSheet } from "react-native";
 import { UserListener } from "../App";
 import logHOC from "./logHOC";
 import { User } from "./user";
+import { AppButton } from "./button";
 
 interface UserCardProps {
     user: User;
@@ -33,9 +34,7 @@ interface UserCardProps {
       <Pressable style={styles.buttons} onPress={()=>onEdit(user)}>
       <Text style={styles.text}>Edit</Text>
       </Pressable>
-      <Pressable style={styles.buttons} onPress={handleDeleteButton}>
-      <Text style={styles.text}>Delete</Text>
-      </Pressable>
+      <AppButton  style1 = {styles.buttons} style2 = {styles.text} onPress={handleDeleteButton} title={"Delete"}/>
       </View>
       </View>
     </View>
