@@ -13,13 +13,19 @@ interface IButtonProps {
   style2: TextStyle;
   tags: string[];
   onPress: any;
-  onFilter: TagListener;
+  filterTags: string[];
+  onFilter: (tags: string[])=> void;
 }
 
 export default class TagButton extends Component<IButtonProps, {}> {
 
     handleFilter = (tag:string) => {
-        this.props.onFilter(tag)
+        if(this.props.filterTags.includes(tag)){
+            this.props.onFilter(this.props.filterTags.filter(tagF => tagF !==tag));
+        }else{
+            this.props.onFilter(this.props.filterTags.concat(tag));
+        }
+        
     }
 
   render() {

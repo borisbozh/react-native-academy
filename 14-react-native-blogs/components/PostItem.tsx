@@ -13,7 +13,8 @@ export interface PostItemProps {
     post: Post;
     onDelete: PostListener;
     onEdit: PostListener;
-    onFilter: TagListener;
+    onFilter: (tags: string[])=> void;
+    filterTags: string[];
 }
 
 
@@ -27,7 +28,7 @@ export default class PostItem extends Component<PostItemProps, {}> {
     //     console.log(tag)
     // }
     render() {
-        const { post, onDelete, onEdit, onFilter }: PostItemProps = this.props;
+        const { post, onDelete, onEdit, onFilter, filterTags}: PostItemProps = this.props;
         return (
             <View style={styles.itemContainer}>
                 <View style={styles.postItem}>
@@ -36,8 +37,8 @@ export default class PostItem extends Component<PostItemProps, {}> {
                         <View style={styles.postContent} >
                             <Text style={styles.title}>{post.title} </Text>
                             <Text style={styles.postMetadata}>{PostStatus[post.status]},  Author ID: {post.authorId}</Text>
-                            <TagButton style1 = {styles.postTags} style2 = {styles.postTag} tags = {post.tags} onPress={() => console.log(1)}
-                            onFilter={(tag) => onFilter(tag)}/>
+                            <TagButton style1 = {styles.postTags} style2 = {styles.postTag} tags = {post.tags} onPress={() => console.log(1)} filterTags={filterTags}
+                            onFilter={onFilter}/>
                         </View>
                     </View>
 

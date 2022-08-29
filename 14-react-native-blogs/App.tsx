@@ -21,7 +21,7 @@ interface AppState {
   filter: FilterType;
   editedPost: Post;
   scrollIndex: number;
-  selectedTag: string;
+  selectedTag: string[];
 }
 export const EMPTY_IMAGE_DATA = { uri: '', width: 0, height: 0 };
 const EMPTY_POST = new Post('', '', [], EMPTY_IMAGE_DATA, 1);
@@ -34,7 +34,7 @@ class App extends Component<{}, AppState> {
     filter: undefined,
     editedPost: EMPTY_POST,
     scrollIndex: 0,
-    selectedTag: ''
+    selectedTag: []
   }
   postsListRef = React.createRef<FlatList<Post>>()
 
@@ -115,9 +115,8 @@ class App extends Component<{}, AppState> {
     })
   }
 
-  handleFilter = (tag:string) =>{
-    this.state.selectedTag = tag;
-    console.log(this.state.selectedTag)
+  handleFilter = (tags:string[]) =>{
+   this.setState({selectedTag: tags})
   }
 
   handleEditTodo = (post: Post) => {
@@ -158,12 +157,11 @@ class App extends Component<{}, AppState> {
               case Views.PostListView:
                 return (
                   <PostList ref={this.postsListRef} posts={this.state.posts}
-                    filter={this.state.filter}
-                    onDelete={this.handleDeletePost}
-                    onEdit={this.handleEditTodo}
-                    onFilter={this.handleFilter}
-                    scrollIndex={this.state.scrollIndex}
-                  />);
+                  filter={this.state.filter}
+                  onDelete={this.handleDeletePost}
+                  onEdit={this.handleEditTodo}
+                  onFilter={this.handleFilter}
+                  scrollIndex={this.state.scrollIndex} filterTags={this.state.selectedTag}                  />);
             }
           })()}
         </KeyboardAvoidingView>
