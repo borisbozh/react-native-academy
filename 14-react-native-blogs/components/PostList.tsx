@@ -10,7 +10,7 @@ interface Props {
     scrollIndex?: number;
     onDelete: PostListener;
     onEdit: PostListener;
-    onFilter: (tags: string[])=> void;
+    onFilter: TagListener;
     filterTags: string[];
 }
 

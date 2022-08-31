@@ -13,7 +13,7 @@ export interface PostItemProps {
     post: Post;
     onDelete: PostListener;
     onEdit: PostListener;
-    onFilter: (tags: string[])=> void;
+    onFilter: TagListener;
     filterTags: string[];
 }
 

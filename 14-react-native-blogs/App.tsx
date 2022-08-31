@@ -127,6 +127,10 @@ class App extends Component<{}, AppState> {
     this.setState({ filter: status })
   }
 
+  handleTagRemoval = (tags:string[]) =>{
+    this.setState({selectedTag: []})
+   }
+
   handleViewChange = () => {
     this.setState(({ activeView }) => ({
       activeView: activeView === Views.PostListView ? Views.PostFormView : Views.PostListView
@@ -143,6 +147,9 @@ class App extends Component<{}, AppState> {
         >
           <IconButton size={30} backgroundColor="green" color="white" onPress={this.handleViewChange} name='check-circle' >
             {this.state.activeView === Views.PostListView ? 'Add New Post' : 'Show All Posts'}
+          </IconButton>
+          <IconButton size={30} backgroundColor="orange" color="white" onPress={this.handleTagRemoval} name='check-circle' >
+            Remove Tags
           </IconButton>
           {(() => {
             switch (this.state.activeView) {

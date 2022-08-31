@@ -28,7 +28,7 @@ export interface PostListener {
 }
 
 export interface TagListener {
-  (tag: string): void;
+  (tag: string[]): void;
 }
 
 export type FilterType = PostStatus | undefined;

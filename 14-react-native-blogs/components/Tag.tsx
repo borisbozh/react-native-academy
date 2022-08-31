@@ -6,7 +6,7 @@ import {
   TextStyle,
   View,
 } from "react-native";
-import { PostListener, TagListener } from "../model/shared-types";
+import { TagListener } from "../model/shared-types";
 
 interface IButtonProps {
   style1: TextStyle;
@@ -14,7 +14,7 @@ interface IButtonProps {
   tags: string[];
   onPress: any;
   filterTags: string[];
-  onFilter: (tags: string[])=> void;
+  onFilter: TagListener
 }
 
 export default class TagButton extends Component<IButtonProps, {}> {
@@ -28,6 +28,15 @@ export default class TagButton extends Component<IButtonProps, {}> {
         
     }
 
+    checkStatus = (tag:string) => {
+      for (var x of this.props.filterTags){
+        if (x === tag){
+            return true
+        }
+    }
+    return false
+    }
+
   render() {
     const {
       style1,
@@ -37,10 +46,10 @@ export default class TagButton extends Component<IButtonProps, {}> {
       onFilter,
     }: IButtonProps = this.props;
     return (
-      <View style={style1}>
+      <View style={style1} >
         {tags.map((tag) => (
-          <Pressable key={tag} onPress={() => this.handleFilter(tag)}>
-            <Text key={tag} style={style2}>
+          <Pressable key={tag} onPress={() => this.handleFilter(tag)} >
+            <Text key={tag} style={[style2, this.checkStatus(tag) ? {backgroundColor: "orange"} : {backgroundColor: '#fccb58'}]}>
               {tag}
             </Text>
           </Pressable>
