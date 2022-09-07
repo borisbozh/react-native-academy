@@ -1,4 +1,4 @@
-import { Post } from "../model/posts.model.js";
+import { Answer, Image, Post, Question } from "../model/posts.model.js";
 import { Identifiable, IdType } from "../model/shared-types.js";
 import { Todo } from "../model/todo.model.js";
 
@@ -63,5 +63,7 @@ export class ApiClientImpl<K, V extends Identifiable<K>> implements ApiClient<K,
 }
 
 export const TodosAPI = new ApiClientImpl<IdType, Todo>('todos');
-export const BlogsAPI = new ApiClientImpl<IdType, Post>('posts');
+export const BlogsAPI1 = new ApiClientImpl<IdType, Post>('posts');
+export const BlogsAPI2= new ApiClientImpl<IdType, Image>('images');
+export const BlogsAPI = new ApiClientImpl<IdType, Question>('questions');
 

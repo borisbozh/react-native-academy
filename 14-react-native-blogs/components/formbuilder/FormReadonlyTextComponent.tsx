@@ -6,8 +6,8 @@ import { Text, TextInput, TextStyle, StyleSheet, View, ViewStyle } from 'react-n
 import { FormComponentState, FormComponent, FormComponentProps, ComponentKinds } from './FormComponent';
 
 export class FormReadonlyTextComponent
-    extends Component<FormComponentProps<string>>
-    implements FormComponent<string> {
+    extends Component<FormComponentProps<string|Date>>
+    implements FormComponent<string|Date> {
     componentKind = 'FormReadonlyTextComponent' as const;
     
     render() {
@@ -16,7 +16,7 @@ export class FormReadonlyTextComponent
             label = capitalize(id),
             style = {},
             labelStyle = {},
-            inputStyle = {}
+            inputStyle = {},
         } = this.props;
         return (
             <View style={{ ...styles.view, ...style }}>

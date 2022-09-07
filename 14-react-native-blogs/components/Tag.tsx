@@ -6,6 +6,7 @@ import {
   TextStyle,
   View,
 } from "react-native";
+import { Answer } from "../model/posts.model";
 import { TagListener } from "../model/shared-types";
 
 interface IButtonProps {

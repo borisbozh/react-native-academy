@@ -1,4 +1,4 @@
-import { Post, PostStatus } from "./posts.model";
+import { Image, Post, PostStatus, Question } from "./posts.model";
 import { Todo } from "./todo.model";
 
 export type IdType = number | undefined
@@ -24,7 +24,7 @@ export interface TodoListener {
 }
 
 export interface PostListener {
-  (post: Post): void;
+  (question: Question): void;
 }
 
 export interface TagListener {

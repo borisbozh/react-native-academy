@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { PostListener, TagListener } from "../model/shared-types";
-import { Post, PostStatus } from "../model/posts.model"
-import { Button, Image, ScrollView, StyleSheet, Text, View, } from "react-native";
+import { Question, ImageStatus, PostStatus } from "../model/posts.model"
+import { Button, ScrollView, StyleSheet, Text, View, } from "react-native";
+import { Image as Image1} from "react-native" ;
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import IconButton from "./IconButton";
 import TagButton from "./Tag";
@@ -10,16 +11,17 @@ export const ITEM_HEIGHT = 400;
 export const ITEM_PADDING = 10;
 
 export interface PostItemProps {
-    post: Post;
+    question: Question;
     onDelete: PostListener;
     onEdit: PostListener;
     onFilter: TagListener;
+    onFav: PostListener;
     filterTags: string[];
 }
 
 
 export interface PostItemListener {
-    (post: Post, postItemComponent: Component<PostItemProps, {}>): void;
+    (question: Question, postItemComponent: Component<PostItemProps, {}>): void;
 }
 
 export default class PostItem extends Component<PostItemProps, {}> {
@@ -28,30 +30,27 @@ export default class PostItem extends Component<PostItemProps, {}> {
     //     console.log(tag)
     // }
     render() {
-        const { post, onDelete, onEdit, onFilter, filterTags}: PostItemProps = this.props;
+        const { question, onDelete, onEdit, onFav, onFilter, filterTags}: PostItemProps = this.props;
         return (
             <View style={styles.itemContainer}>
                 <View style={styles.postItem}>
                     <View style={styles.postHeader}>
-                        <Image resizeMode='contain' style={styles.postImage} source={{ uri: post.image.uri }}></Image>
                         <View style={styles.postContent} >
-                            <Text style={styles.title}>{post.title} </Text>
-                            <Text style={styles.postMetadata}>{PostStatus[post.status]},  Author ID: {post.authorId}</Text>
-                            <TagButton style1 = {styles.postTags} style2 = {styles.postTag} tags = {post.tags} onPress={() => console.log(1)} filterTags={filterTags}
-                            onFilter={onFilter}/>
+                            <Text style={styles.title}> Question : {question.text} </Text>
+                            <Text>Answers:</Text>
+                            {question.answers.map(tag => <TagButton style1 = {styles.postTags} style2 = {styles.postTag} tags = {[tag]} onPress={() => console.log(1)} filterTags={filterTags}
+                            onFilter={onFilter}/>)}
                         </View>
+                        <Image1 resizeMode='contain' style={styles.postImage} source={{ uri: question.picture?.uri }}></Image1>
                     </View>
-
-                    <ScrollView style={styles.textScrollView} nestedScrollEnabled={true}>
-                        <Text style={styles.postText}>{post.content}</Text>
-                    </ScrollView>
                     <View style={styles.postItemButtons}>
                         <IconButton style={styles.button} textStyle={styles.buttonText} name="pencil-square" size={27} color="white" backgroundColor='green'
-                            onPress={() => onEdit(post)}>Edit
+                            onPress={() => onEdit(question)}>Edit
                         </IconButton>
+
                         <View style={{ width: 20, backgroundColor: 'transparent' }} />
                         <IconButton style={styles.button} textStyle={styles.buttonText} name="times-circle" size={27} color="white" backgroundColor='#ff4466'
-                            onPress={() => onDelete(post)}>Delete
+                            onPress={() => onDelete(question)}>Delete
                         </IconButton>
                     </View>
                 </View >
@@ -129,6 +128,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
     },
     postItemButtons: {
+        marginTop: 15,
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'flex-start',

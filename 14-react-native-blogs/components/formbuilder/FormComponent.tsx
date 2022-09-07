@@ -4,6 +4,7 @@ import { capitalize } from '../../utils/utils';
 import { Component } from 'react';
 import { Text, TextInput, TextStyle, StyleSheet, View, ViewStyle } from 'react-native';
 import { Optional } from '../../model/shared-types';
+import { Answer } from '../../model/posts.model';
 
 export interface FormComponentProps<V, OT = {}> {
     id: string;
@@ -16,6 +17,8 @@ export interface FormComponentProps<V, OT = {}> {
     labelStyle?: TextStyle;
     inputStyle?: TextStyle;
     errorStyle?: TextStyle;
+    answers: Answer[];
+    answer:Answer
 }
 
 export interface FormComponentState<V> {
@@ -24,7 +27,7 @@ export interface FormComponentState<V> {
     validationErrors: FieldValidationResult;
 }
 
-export type ComponentKinds = 'FormTextComponent' | 'FormReadonlyTextComponent' | 'FormDropdownComponent' | 'FormImageComponent';
+export type ComponentKinds = 'FormTextComponent' | 'FormReadonlyTextComponent' | 'FormDropdownComponent' | 'FormImageComponent' | Date | `FormAnswerComponent`;
 
 export interface FormComponent<V, OT = {}> extends Component<FormComponentProps<V, OT>> {
     componentKind: ComponentKinds;
